@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+
+  <!-- =====================================================
+       SOLAR SYSTEM BACKGROUND
+  ====================================================== -->
+
+  <canvas id="orbitCanvas"></canvas>
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="headnav">
+
+    <img
+      src="logo.png"
+      alt="Suman logo"
+      class="logo"
+    >
+
+    <nav>
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+  ====================================================== -->
+
+  <main>
+
+
+    <!-- ===================================================
+         HERO
+    ==================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="hero-content">
+
+        <h1>
+          Building From
+          <span>Curiosity</span>
+        </h1>
+
+        <p>
+          I make website designs that are both beautiful and functional.
+          <span>Fun Fact:</span> I can also teach you physics!
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         ABOUT
+    ==================================================== -->
+
+    <section
+      class="about-section"
+      id="about"
+    >
+
+      <div class="about-content">
+
+        <span class="section-label">
+          ABOUT
+        </span>
+
+
+        <h2>
+          Curiosity,<br>
+          <span>then creation.</span>
+        </h2>
+
+
+        <p class="about-intro">
+          I'm a physics student who likes understanding how things
+          work and then building something with that understanding.
+        </p>
+
+
+        <p class="about-description">
+          My interests sit somewhere between physics, programming,
+          web development, and creative work. I enjoy taking an idea,
+          breaking it apart, experimenting with it, and eventually
+          turning it into something I can see or interact with.
+        </p>
+
+
+        <div class="about-traits">
+
+
+          <div class="trait">
+
+            <span class="trait-number">
+              01
+            </span>
+
+            <div>
+
+              <h3>
+                PHYSICS
+              </h3>
+
+              <p>
+                Understanding systems
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="trait">
+
+            <span class="trait-number">
+              02
+            </span>
+
+            <div>
+
+              <h3>
+                CODE
+              </h3>
+
+              <p>
+                Building with logic
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="trait">
+
+            <span class="trait-number">
+              03
+            </span>
+
+            <div>
+
+              <h3>
+                CREATIVITY
+              </h3>
+
+              <p>
+                Giving ideas a form
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+      <!-- ===============================================
+           PORTRAIT
+      ================================================ -->
+
+      <div class="about-portrait">
+
+        <div class="portrait-glow"></div>
+
+        <div class="portrait-orbit orbit-one"></div>
+
+        <div class="portrait-orbit orbit-two"></div>
+
+        <img
+          src="profile.png"
+          alt="Portrait of Suman"
+          class="profile-image"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         PROJECTS
+    ==================================================== -->
+
+    <section
+      id="projects"
+      class="placeholder-section"
+    >
+
+      <h2>
+        Projects
+      </h2>
+
+      <p>
+        Websites, simulations and other experiments.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================================
+         CONTACT
+    ==================================================== -->
+
+    <section
+      id="contact"
+      class="placeholder-section"
+    >
+
+      <h2>
+        Contact
+      </h2>
+
+      <p>
+        More coming soon.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       PLANET NAVIGATION
+  ====================================================== -->
+
+  <aside class="planet-nav">
+
+    <div class="planet-nav-header">
+
+      <span>
+        SOLAR SYSTEM
+      </span>
+
+      <span class="planet-nav-line"></span>
+
+    </div>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Sun"
+    >
+      <span class="planet-dot sun-dot"></span>
+      Sun
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Mercury"
+    >
+      <span class="planet-dot mercury-dot"></span>
+      Mercury
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Venus"
+    >
+      <span class="planet-dot venus-dot"></span>
+      Venus
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Earth"
+    >
+      <span class="planet-dot earth-dot"></span>
+      Earth
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Mars"
+    >
+      <span class="planet-dot mars-dot"></span>
+      Mars
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Jupiter"
+    >
+      <span class="planet-dot jupiter-dot"></span>
+      Jupiter
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Saturn"
+    >
+      <span class="planet-dot saturn-dot"></span>
+      Saturn
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Uranus"
+    >
+      <span class="planet-dot uranus-dot"></span>
+      Uranus
+    </button>
+
+
+    <button
+      type="button"
+      class="planet-button"
+      data-planet="Neptune"
+    >
+      <span class="planet-dot neptune-dot"></span>
+      Neptune
+    </button>
+
+  </aside>
+
+
+  <!-- =====================================================
+       PLANET INFORMATION
+  ====================================================== -->
+
+  <aside
+    class="planet-info"
+    id="planetInfo"
+  >
+
+    <button
+      type="button"
+      class="planet-info-close"
+      id="planetInfoClose"
+      aria-label="Close"
+    >
+      ×
+    </button>
+
+
+    <span class="planet-info-label">
+      CELESTIAL OBJECT
+    </span>
+
+
+    <h2 id="planetInfoName">
+      Earth
+    </h2>
+
+
+    <div class="planet-info-divider"></div>
+
+
+    <p id="planetInfoDescription">
+      Earth is the third planet from the Sun.
+    </p>
+
+
+    <div class="planet-facts">
+
+      <div class="planet-fact">
+
+        <span>
+          POSITION
+        </span>
+
+        <strong id="planetInfoPosition">
+          3rd planet
+        </strong>
+
+      </div>
+
+
+      <div class="planet-fact">
+
+        <span>
+          ORBIT
+        </span>
+
+        <strong id="planetInfoOrbit">
+          365 days
+        </strong>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- =====================================================
+       TIME CONTROLS
+  ====================================================== -->
+
+  <div
+    class="time-controls"
+    aria-label="Solar System time controls"
+  >
+
+    <button
+      type="button"
+      class="time-button"
+      data-speed="0.04"
+    >
+      ⏪ Slow
+    </button>
+
+
+    <button
+      type="button"
+      class="time-button active"
+      data-speed="0.18"
+    >
+      ▶ Normal
+    </button>
+
+
+    <button
+      type="button"
+      class="time-button"
+      data-speed="0.8"
+    >
+      ⏩ Fast
+    </button>
+
+  </div>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script
+    type="module"
+    src="script.js"
+  ></script>
+
+</body>
+
+</html>
